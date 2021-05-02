@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aula01CSS</title>
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+    <body>
+        <header></header>
+        <nav></nav>
+
+        <main>
+            <div id="esquerda">
+                <h1>Universidade do Trabalho Digital</h1>
+                <h2>Para mais detalhes acesse o <a href="#"> link </a></h2>
+                <img  id="logo" src="./img/logo.png" alt="Logo da UTD">
+                <!--Lista não ordenada-->
+                <ul>
+                    <li>Pyhton</li>
+                    <li>PHP</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                </ul>
+                <!--Lista ordenada-->
+                <ol>
+                    <li>Bootstrap</li>
+                    <li>SpringBoot</li>
+                    <li>MySql</li>
+                    <li>Insomnia</li>
+                </ol>
+            </div>
+
+            <div id="direita">
+                <form action="">
+                <fieldset>
+                    <legend>Cadastro usuario</legend>
+                    <label for="nome_form">Nome:</label><br/>
+                    <input id="nome_form" type="text"
+                    placeholder="Digite seu nome" />    <!-- readonly impede o usuario de digitar-->
+                    <br/><br/>
+                    <label for="idade_form">Idade:</label><br>
+                    <input id="idade_form" type="number" required
+                    placeholder="Digite sua idade" /></input>
+                    
+
+                    <p>
+                        <label for="end_cad">Seu endereço:</label><br/>
+                        <input id="end_cad" name="end_cad" required="required" type="text" placeholder="Digite seu endereço"/>
+                    </p>
+                    <p>
+                        <label for="email_cad">Email:</label><br/>
+                        <input id="email_cad" name="email_cad" required="required" type="text" placeholder="Digite seu email" />
+                    </p>
+
+                    <p>
+                        <button type="submit"> Submit</button>
+                    </p>
+                </fieldset>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
