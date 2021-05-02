@@ -1,61 +1,61 @@
 /////////////////////////////////////////////  AULA 01  ////////////////////////////////////////// 
 
-// function Person(){
-//     this.name = '';
-//     this.age = '';
-// }
+ function Person(){
+     this.name = '';
+     this.age = '';
+ }
 
-// let p1 = new Person();
+ let p1 = new Person();
 
-// p1.name = "Joana";
-// p1.age = "23";
+ p1.name = "Joana";
+ p1.age = "23";
 
-// console.log(p1.name);
-// console.log(p1.age);
+ console.log(p1.name);
+ console.log(p1.age);
 
-// let aluno={
-//     nome: 'Joana',
-//     idade: 22,
-//     curso: 'eng civil'
-// }
-// aluno.turno = 'manhã';
+ let aluno={
+     nome: 'Joana',
+     idade: 22,
+     curso: 'eng civil'
+ }
+ aluno.turno = 'manhã';
 
-// console.log(aluno.nome);
-// console.log(aluno.idade);
-// console.log(aluno.curso);
+ console.log(aluno.nome);
+ console.log(aluno.idade);
+ console.log(aluno.curso);
 
 
-//desestrutuação
-// let {nome, idade} = aluno;
+ desestrutuação
+ let {nome, idade} = aluno;
 
-// console.log(nome);
-// console.log(idade);
-// console.log(aluno.turno);
+ console.log(nome);
+ console.log(idade);
+ console.log(aluno.turno);
 
 /////////////////////////////////////////////  AULA 02   //////////////////////////////////////////
-// let student={
-//     name: 'Joana',
-//     age: 22,
-//     course: 'eng civil',
-//     get getName(){
-//         return this.name;
-//     },
-//     set changeName(newName){
-//         this.name = newName;
-//     },
-//     get getAge(){
-//         return this.age;
-//     },
-//     set changeAge(age){
-//         this.age = age;
-//     }
+ let student={
+     name: 'Joana',
+     age: 22,
+     course: 'eng civil',
+     get getName(){
+         return this.name;
+     },
+     set changeName(newName){
+         this.name = newName;
+     },
+     get getAge(){
+         return this.age;
+     },
+     set changeAge(age){
+         this.age = age;
+     }
 
-// }
+ }
 
-// student.changeName = 'Lara';
-// student.changeAge = '30';
-// console.log(student.getName);
-// console.log(student.getAge);
+ student.changeName = 'Lara';
+ student.changeAge = '30';
+ console.log(student.getName);
+ console.log(student.getAge);
 
 ////////////////////////////////////////////  AULA 03  //////////////////////////////////////////
 class Account{
