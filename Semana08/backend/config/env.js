@@ -1,7 +1,9 @@
 const env = {
-    database: 'backend',
+    database: 'db_projeto',
     username: 'root',
     password: 'bmmbo1425',
-    host: 'locallhost',
+    host: 'localhost',
     dialect: 'mysql',
-};
+  };
+  
+  module.exports = env;
