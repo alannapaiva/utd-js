@@ -11,5 +11,6 @@ ________________________________________________________________________________
   <ul> Módulo VI - Programção Orientada a Objetos</ul>
   <ul> Módulo VII - Arrays</ul>
   <ul> Módulo VIII - Node.js</ul>
+  <ul> Módulo XI - React</ul>
   <ul> upcoming modules in progress...</ul>
 
