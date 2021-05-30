@@ -1,15 +1,14 @@
 const express = require('express');
+
 const app = express();
 
-var bodyParser = require('body-parser');
- 
-global.__basedir = __dirname;
- 
-const db = require('./config/db.config.js');
+const db = require('./app/config/db.config.js');
 
 const Cliente = db.Cliente;
 
-let router = require('./routes/router.js');
+var bodyParser = require('body-parser'); 
+
+let router = require('./app/routes/router.js');
 
 const cors = require('cors')
 const corsOptions = {
@@ -22,27 +21,29 @@ app.use(bodyParser.json());
 app.use(express.static('resources'));
 app.use('/', router);
 
-// Create o servidor
 const server = app.listen(8080, function () {
  
   let host = server.address().address
   let port = server.address().port
  
-  console.log("O App está executando em http://%s:%s", host, port); 
+  console.log("App está rodando no endereço http://%s:%s", host, port); 
 })
 
 db.sequelize.sync({force: true}).then(() => {
-  console.log('Reescreve e popula a tabela com { force: true }');
+  console.log('Apaga e recria a tabela usando { force: true }');
   Cliente.sync().then(() => {
     const clientes = [
-      { nome: 'Pedro', email: 'pedro@email.com' ,idade: 23 },
-      { nome: 'Sara',  email: 'sara@email.com' , idade: 31 },
-      { nome: 'Emilly',  email: 'emilly@email.com' , idade: 18 },
-	  { nome: 'Ricardo',  email: 'ricardo@email.com' , idade: 42 },
+      { nome: 'Pedro', idade: 23, email: 'pedro@email.com' },
+      { nome: 'Sara' , idade: 31 ,  email: 'sara@email.com'},
+      { nome: 'Emilly', idade: 18 ,  email: 'emilly@email.com'},
     ]
     
-    for(let i=0; i<clientes.length; i++){
-      Cliente.create(clientes[i]);
-    }
+    clientes.map(cliente =>{
+
+        Cliente.create(cliente);
+
+    });
   })
 }); 
+
+
