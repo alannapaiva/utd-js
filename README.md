@@ -12,5 +12,5 @@ ________________________________________________________________________________
   <ul> Módulo VII - Arrays</ul>
   <ul> Módulo VIII - Node.js</ul>
   <ul> Módulo XI - React</ul>
-  <ul> upcoming modules in progress...</ul>
+  <ul> Módulo X - Projeto Final </ul>
 
