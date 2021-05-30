@@ -50,7 +50,7 @@ export default class Home extends Component{
                         <th>Id</th>    
                         <th>Nome</th>
                         <th>Idade</th>
-                        <th>email</th>
+                        <th>Email</th>
                         <th></th>
                         </tr>
                     </thead>
@@ -71,7 +71,7 @@ export default class Home extends Component{
                         ))}
                 </tbody>
                 </table>
-                <Link to='/add'>Cadastrar novo Cliente</Link>
+                <Link class="button-cad" to='/add'>Cadastrar novo Cliente</Link>
             </div>
         );
     }

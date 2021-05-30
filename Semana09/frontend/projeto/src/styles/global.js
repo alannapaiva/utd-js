@@ -27,8 +27,9 @@ a{
 
 /* formatando o cabeçalho dos formulários */
 h1{
+  font-family: 'Poppins', sans-serif;
   font-size: 48px;
-  color: #066a75;
+  color: hsl(322, 100%, 66%);
   padding: 10px 0;
   font-family: Arial,sans-serif;
   font-weight: bold;
@@ -43,8 +44,9 @@ p:first-child{
   margin: 0px;
 }
 label{
-  color: #405c60;
+  color: hsl(192, 100%, 9%);
   position: relative;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /**** advanced input styling ****/
@@ -78,25 +80,49 @@ input:not([type="checkbox"]){
   transition: all 0.2s linear;
 }
 
-/*estilo do botão submit */
-input[type="submit"]{
-  width: 100%!important;
-  cursor: pointer;	
-  background: #3d9db3;
-  padding: 8px 5px;
+/*estilo do botão cadastro */
+.button-cad{
+  display: inline-block;
+  background: #927cfe;
   color: #fff;
-  font-size: 20px;	
-  border: 1px solid #fff;	
-  margin-bottom: 10px;	
-  text-shadow: 0 1px 1px #333;
-  
-  -webkit-border-radius: 1px;
-  border-radius: 1px;
-  
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  margin-left: 7rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  padding: 20px 40px 20px 40px;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   transition: all 0.2s linear;
 }
+
+.button-cad:hover{
+  background: hsl(322, 100%, 66%);
+}
+
+/*estilo do botão submit */
+input[type="submit"]{
+  display: inline-block;
+  background:hsl(322, 100%, 66%);
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  padding: 20px 40px 20px 40px;
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  transition: all 0.2s linear;
+}
+
 input[type="submit"]:hover{
-  background: #4ab3c6;
+  background:#927cfe;
 }
 
 /* estilos para o formulário */
@@ -108,7 +134,8 @@ input[type="submit"]:hover{
   padding: 18px 6% 60px 6%;
   margin: 0 0 35px 0;
   background: rgb(247, 247, 247);
-  border: 1px solid rgba(147, 184, 189,0.8);
+  border: 1px solid hsl(322, 100%, 66%);
+  
   border-radius: 5px;
   
   -webkit-animation-duration: 0.5s;
@@ -144,6 +171,7 @@ table {
         padding: 5px;
         position: relative;
         text-align: right;
+        font-family: 'Open Sans', sans-serif;
         
         button {
           background: #927cfe;
@@ -166,7 +194,9 @@ table {
             cursor: pointer;
           }
         }
-        
+        button:hover{
+          background: hsl(322, 100%, 66%);
+        }
       }
     }
   }
@@ -184,6 +214,10 @@ table {
       display: table-header-group;
       
       th {
+        font-family: 'Open Sans';
+        color: hsl(322, 100%, 66%);
+        
+        font-size: 19px;
         padding: 10px;
       }
     }
