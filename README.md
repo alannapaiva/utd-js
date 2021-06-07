@@ -1,16 +1,16 @@
-# Curso de Interfaces WEB com JavaScript pela Universidade do Trabalho Digital 
-____________________________________________________________________________________________________________________________________________________________________
+## Curso de Interfaces WEB com JavaScript pela Universidade do Trabalho Digital 
+_________________________________________________________________________________________________________________________________________________________________
+<h3>Conteúdos Abordados: :hourglass_flowing_sand:</h3>
 
-<h2>Conteúdos Abordados :clipboard::hourglass_flowing_sand:</h2>
+  - [x] Módulo I - Básico de HTML e HTML5
+  - [x] Módulo II -CSS Básico
+  - [x] Módulo III - Programação Estrtuturada com JavaScript
+  - [x] Módulo IV - GIT & GitHub 
+  - [x] Módulo V - JavaScript Intermediário
+  - [x] Módulo VI - Programção Orientada a Objetos
+  - [x] Módulo VII - Arrays
+  - [x] Módulo VIII - Node.js
+  - [x] Módulo XI - React
+  - [x] Módulo X - Projeto Final 
 
-  <ul> Módulo I - Básico de HTML e HTML5</ul>
-  <ul> Módulo II -CSS Básico</ul>
-  <ul> Módulo III - Programação Estrtuturada com JavaScript</ul>
-  <ul> Módulo IV - GIT & GitHub </ul>
-  <ul> Módulo V - JavaScript Intermediário</ul>
-  <ul> Módulo VI - Programção Orientada a Objetos</ul>
-  <ul> Módulo VII - Arrays</ul>
-  <ul> Módulo VIII - Node.js</ul>
-  <ul> Módulo XI - React</ul>
-  <ul> Módulo X - Projeto Final </ul>
-
+________________________________________________________________________________________________________________________________________________________________
